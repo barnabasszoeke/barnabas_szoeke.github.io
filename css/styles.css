@@ -60,6 +60,8 @@ header h2:before {
     }
 }
 
+
+
 h2{
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
@@ -369,4 +371,13 @@ footer button:hover{
         opacity: 0;
         animation: none;
     }
+}
+
+.milkafooter{
+    margin-top: 4%;
+}
+
+.videomilka{
+    margin-top: 3%;
+    margin-left: 14%;
 }
