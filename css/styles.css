@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    cursor: default;
+    cursor: pointer;
 }
 
 header{
@@ -120,6 +120,7 @@ article{
 }
 
 article button{
+    cursor: pointer;
     background-color: #ddd;
     border: none;
     padding: 18px;
@@ -315,6 +316,7 @@ footer a:hover{
 }
 
 footer button{
+    cursor: pointer;
     margin-left: 50%;
     margin-top: 7%;
     border: none;
@@ -374,10 +376,25 @@ footer button:hover{
 }
 
 .milkafooter{
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 .videomilka{
     margin-top: 3%;
     margin-left: 14%;
+    animation: transitionIn 0.9s;
+    box-shadow: 0px 0px 10px rgb(95, 95, 95);
+    margin-bottom: 2%;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

@@ -20,6 +20,19 @@ body{
     height: 100%;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    animation: transitionIn 0.95s;
+}
+
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .calculator-grid button{
