@@ -1,0 +1,75 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(-135deg, #d5ddbe, #cfeeeb, #c0cc9b, #eef0e9);
+    background-size: 400%;
+    animation: gradiant 15s ease infinite;
+    height: 100vh;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(236, 236, 236, .50);
+}
+
+.calculator-grid button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.two-rows {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(126, 126, 126, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2%;
+    padding-right: 6%;
+    padding-left: 8%;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.ongoing-operand {
+    color: rgba(250, 250, 250, .70);
+    font-size: 140%;
+}
+
+.current-operand {
+    color: rgba(270, 270, 270, .99);
+    font-size: 250%;
+}
+
+@keyframes gradiant {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
